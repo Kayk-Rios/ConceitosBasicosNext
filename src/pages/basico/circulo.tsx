@@ -8,9 +8,8 @@ export default function Circulo(){
         <>
         <h1  >Esse ea parte pai de um circulo</h1>
         <div className="flex justify-around">
-            <Circulos texto={"kayk "}/>
-            <Circulos texto="Maria " quasePerfeito/>
-            <Circulos texto="Julia "/> 
+             <Circulos texto="ola mundo" />
+             <Circulos texto="Feito por props" quasePerfeito={true}/>
             </div>
         </>
     )

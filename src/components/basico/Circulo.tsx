@@ -1,23 +1,22 @@
 
-interface CirculoProps {
-    texto: string,
-    quasePerfeito?: boolean
+interface CirculosProps{
+    texto:string;
+    quasePerfeito?:boolean;
 }
 
-export default function Circulo(props: CirculoProps) {
+export default function Circulo(props: CirculosProps) {
     return (
         <>
-            <div className={`flex 
-            justify-center 
-            items-center 
-            h-64 w-64 
-            text-[20px]
-          bg-slate-500
-           ${props.quasePerfeito ? '  rounded-md' : ' rounded-full'}`}>
-
-                <h2>Circulo de : </h2> 
+        <div className={`h-[300px] 
+            w-[300px]
+             bg-slate-500 
+             p-[60px] text-center border
+              rounded-full
+           ${props.quasePerfeito ? 'rounded-md': 'rounded-full'}`}>
+                <h2>Esse e um circulo de prps</h2>
                 {props.texto}
-            </div>
+        </div>
         </>
     )
 }
+
