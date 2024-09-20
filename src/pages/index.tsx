@@ -1,6 +1,7 @@
 import Image from "next/image";
 
-export default function Home() {
+export default  function Home() {
+  
   return (
     <main className="flex flex-col justify-center items-center">
       <h1>Olá mundo</h1>
@@ -17,6 +18,8 @@ export default function Home() {
           height={50}
         />
       </a> */}
+
+
     </main>
   );
 }
