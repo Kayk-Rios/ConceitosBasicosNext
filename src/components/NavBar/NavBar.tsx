@@ -19,10 +19,11 @@ export default function NavBar(){
               <Link href="/listas/produtos"> Render Loop</Link>
               <Link href="/starwars"> Simula API</Link>
               <Link href="/hooks/contador"> Custom UseEffect</Link>
-              <Link href="/contexto/contador"> Cont ContexAPI</Link>
+              {/* <Link href="/contexto/contador"> Cont ContexAPI</Link> */}
               <Link href="/layout/"> Grid</Link>
             </ul>
         </nav>
+    
         
         </>
     )
