@@ -10,7 +10,6 @@ interface GridProps {
         <div>
         <h1 className="flex justify-center mt-[10%] gap-5 mb-11">Grid layout</h1>
             <div className={`
-           
              grid 
               grid-cols-2 
              sm:grid-cols-2 

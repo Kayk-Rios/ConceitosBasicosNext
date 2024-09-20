@@ -3,6 +3,7 @@ import Link from "next/link";
 
 
 export default function NavBar(){
+    
     return(
         <>
         
@@ -13,7 +14,7 @@ export default function NavBar(){
               <Link href="/comunicacao/direta"> Comunica Direta</Link>
               <Link href="/comunicacao/indireta">Comunica indireta </Link>
               <Link href="/condicional/faq"> Condicionais </Link>
-              <Link href="/hooks/imagem"> Hook Image </Link>
+              {/* <Link href="/hooks/imagem"> Hook Image </Link> */}
               <Link href="/listas/basico"> Render lista</Link>
               <Link href="/listas/produtos"> Render Loop</Link>
               <Link href="/starwars"> Simula API</Link>

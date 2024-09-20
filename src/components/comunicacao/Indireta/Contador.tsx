@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { use, useState } from "react";
 import Botoes from "./Botoes";
 import Display from "./Display";
 
@@ -6,18 +6,15 @@ import Display from "./Display";
 
 export default function Contador(){
 
+    const [num, setNum] = useState(0)
 
-    const [num, setNum]= useState<number>(0)
-
-    function incrementar( valor:number){
-        setNum(num + valor)
+    function inc(){
+        setNum(num + 1)
     }
-    function decrementar(valor:number){
-        setNum(num - valor)
-
+    function dec(){
+        setNum(num - 1)
     }
-    
-
+ 
     return(
         <>  
         <div className="flex flex-col">
@@ -27,7 +24,7 @@ export default function Contador(){
             
             
             </div>
-             <Botoes inc={incrementar} dec={decrementar}/>
+             <Botoes inc={inc} dec={dec}/>
         </div>
         </>
     )

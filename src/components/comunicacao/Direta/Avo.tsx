@@ -1,5 +1,6 @@
 import Pai from "./Pai";
 
+
 interface AvoProps{
     nome?: string;
     sobrenome: string;
@@ -14,7 +15,7 @@ export default function Avo(props: AvoProps){
                 Sobrenome:{props.sobrenome}
            
             </div>
-            <Pai nome="Josef" sobrenome={props.sobrenome}/>
+           <Pai nome="James" sobrenome={props.sobrenome}/>
            
         </div>
         

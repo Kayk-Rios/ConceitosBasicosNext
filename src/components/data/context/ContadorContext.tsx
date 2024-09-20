@@ -5,6 +5,7 @@ const ContadorContext = createContext({}as any)
 export default ContadorContext
 
 export  function ContadorProvider(props: any){
+    
     const [numero, setNumero ] = useState(400)
 
     function decrementar(){

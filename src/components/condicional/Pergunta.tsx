@@ -8,6 +8,8 @@ interface PerguntaProps{
 
 export default function Pergunta(props: PerguntaProps){
     const [aberta, setAberta] = useState(false)
+
+
     return (
         <>
             <div className="border border-blue-500 rounded-md p-5 flex flex-col">
@@ -18,14 +20,15 @@ export default function Pergunta(props: PerguntaProps){
                 border rounded-md 
                 flex justify-center 
                 items-center select-none"
-                onClick={()=>setAberta(!aberta)}
+                onClick={()=> setAberta(!aberta)}
                 >
                 {props.texto}
 
                 </h2>
-                {aberta ? (
+               
+                {aberta ?(
                     <div>
-                        {props.resposta}
+                        <h2>{props.resposta}</h2>
                     </div>
                 ): ''}
             

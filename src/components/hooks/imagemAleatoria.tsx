@@ -3,7 +3,7 @@ import Image from "next/image"
 
 
 export default function ImagemAleatoria() {
-    let pesquisa: string = ""
+    let pesquisa: string = ''
     const url: string = 'http://source.unsplash/random/featured/300x300?'
 
     function urlImagem() {

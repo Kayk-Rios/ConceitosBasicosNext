@@ -1,15 +1,16 @@
+//Vai apenas exibir o numero
 
-interface DisParops{
-valor: number;
+interface ValorPrps{
+    valor:number
 }
 
 
-export default function Display(props: DisParops){
+export default function Display(props: ValorPrps ){
     return(
         <>
         <div className="bg-zinc-600 text-white">
 
-            {props.valor}
+          {props.valor} 
         </div>
         </>
     )
